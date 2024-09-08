@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --branco-principal: #fff;
+    --cinza-secundario: #c0c0c0;
+    --botao-azul: #0d6efd;
+    --botao-azul-border: #0d6efd;
+    --botao-azul-hover: #0b5ed7;
+    --botao-azul-hover-border: #0a58ca;
+    --cor-de-fundo: #00030c;
+    --fonte-principal: 'Inter';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.principal {
+    background-image: url(../img/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container__bloco {
+    margin: 0 6em;
+}
+
+.container__titulo {
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+    ;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    color: var(--branco-principal);
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 1em;
+    transition: 0.2s ease-in;
+}
+
+.container__botao:hover{
+    background-color: var(--botao-azul-hover);
+    border-color: var(--botao-azul-hover-border);
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.botao_secundario:hover {
+    background-color: var(--branco-principal);
+    color: var(--cor-de-fundo);
+}
+
+.container__aviso {
+    font-size: 0.75rem;
+    color: var(--cinza-secundario);
+}
+
+.secundario {
+    align-items: center;
+    margin: 10em;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.descricao__titulo {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--branco-principal);
+    margin-bottom: 0.2em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 3rem;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 5em 0;
+}
+
+.lista__item {
+    font-size: 2rem;
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape__lista {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+.rodape__link>a {
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 1em;
+    transition: 0.2s ease-in-out;
+}
+
+.rodape__link>a:hover {
+    color: var(--botao-azul);
+}
+
+.rodape__link>a:active {
+    color: #800080;
+}
+
+.rodape__texto {
+    font-size: 0.875rem;
+    color: var(--cinza-secundario);
+    margin: 1em 0;
+}
